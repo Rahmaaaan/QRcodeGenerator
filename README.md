@@ -35,13 +35,15 @@ To run QRcode Generator locally, follow these steps:
    node index.js
    ```
 
-4. Enter the URL
+4. Enter the URL:
+   
    After running the script, the CLI will prompt you to enter the URL for which you want to generate the QR code.
 
-5. Generate QR Code:
+6. Generate QR Code:
+   
    Once you've entered the URL, the tool will generate a QR code image representing the provided URL.
 
-6. Save QR Code Image & URL
+8. Save QR Code Image & URL
 
    The generated QR code image will be saved in the project directory. The URL will also be saved in a text file for your reference.
 
