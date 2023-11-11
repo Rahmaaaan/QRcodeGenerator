@@ -1,5 +1,5 @@
 {
-  "name": "qr-code-project",
+  "name": "qr-code",
   "version": "1.0.0",
   "description": "QR code generating drom link",
   "main": "index.js",

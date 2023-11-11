@@ -5,10 +5,10 @@ import fs from "fs";
 inquirer
   .prompt([
     {
-        message: "Type in your URL : ",
-        name: "URL"
+      message: "Type in your URL : ",
+      name: "URL",
     },
-    ])
+  ])
 
   .then((answers) => {
     const url = answers.URL;
@@ -16,13 +16,11 @@ inquirer
     var qr_svg = qr.image(url);
     qr_svg.pipe(fs.createWriteStream("QRimage.png"));
 
-
     fs.writeFile("URL.txt", url, (err) => {
-        if (err) throw err;
-        console.log("Your file has been saved!");
-    })
-
-    })
+      if (err) throw err;
+      console.log("Your file has been saved!");
+    });
+  })
 
   .catch((error) => {
     if (error.isTtyError) {
